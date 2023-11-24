@@ -4,7 +4,7 @@
         <title> CSS animation practice </title>
         <style> 
              body {
-                background-color: rgb( 25, 25 , 25);
+                background-color: #262A10;
                 height : 100vh; 
                 display: flex;
                 align-items: center;
@@ -20,7 +20,7 @@
                 position: relative;
              }
              h1::before{
-                content: "AKEON";
+                content: "HOVER";
                 position: absolute;
                 width: 0%;
                 height: 100%; 
@@ -39,6 +39,15 @@
     </head>
 <body>
     <script type ="text/javascript" src="web.js"> </script>
-    <h1> AKEON </h1>
+    <h1> HOVER </h1>
+                 <!-- FIND OUT HOW TO ADD BUTTON FUNCTIONS WITH JS -->
+    <script>
+        var ClickMeButton = document.createElement('Button')
+        ClickMeButton.innerHTML = 'CLICK ME'
+        ClickMeButton.style.background = "#FFFFFF"
+        document.body.appendChild(ClickMeButton)
+        window.location.href = "https://youtube.com"
+     </script>
+     <!-- Code works but when site is loaded it just directs you yo youtube it should be when button is clicked.-->
 </body>
 </html>
