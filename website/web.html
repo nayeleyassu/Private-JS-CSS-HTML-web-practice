@@ -1,53 +1,14 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <title> CSS animation practice </title>
-        <style> 
-             body {
-                background-color: #262A10;
-                height : 100vh; 
-                display: flex;
-                align-items: center;
-                justify-content: center;
-             }
-             h1 {
-                font-size: 15rem;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-             }
-             h1 {
-                color: transparent;
-                -webkit-text-stroke: 3px white; 
-                position: relative;
-             }
-             h1::before{
-                content: "HOVER";
-                position: absolute;
-                width: 0%;
-                height: 100%; 
-                overflow: hidden; 
-                color: beige;
-                border-right: 8px solid beige; 
-                transition: 1s ease-in-out;
-             }
-
-             h1:hover::before{
-                width: 100%;
-                filter: drop-shadow(0 0 25px beige);
-             }
-        </style> 
+        <title> CSS an </title>
         <link rel="stylesheet" type="text/css" href="web.css">
     </head>
 <body>
-    <script type ="text/javascript" src="web.js"> </script>
-    <h1> HOVER </h1>
-                 <!-- FIND OUT HOW TO ADD BUTTON FUNCTIONS WITH JS -->
-    <script>
-        var ClickMeButton = document.createElement('Button')
-        ClickMeButton.innerHTML = 'CLICK ME'
-        ClickMeButton.style.background = "#FFFFFF"
-        document.body.appendChild(ClickMeButton)
-        window.location.href = "https://youtube.com"
-     </script>
-     <!-- Code works but when site is loaded it just directs you yo youtube it should be when button is clicked.-->
+    
+    <a class="neon-text" href="https://google.com"> AKEON </a>
+   <!-- FIND OUT HOW TO ADD BUTTON FUNCTIONS WITH JS -->
+   <!-- Code works but when site is loaded it just directs you yo youtube it should be when button is clicked.-->
+   <script type ="text/javascript" src="web.js"> </script>
 </body>
 </html>
