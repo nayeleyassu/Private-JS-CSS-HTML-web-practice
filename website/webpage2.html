@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            RECIPES 
+        </title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: #5c1A1b;
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                display: grid;
+                grid-template-rows: 50% 50%;
+                grid-template-columns: 50% 50%;
+                height: 100vh;
+                width: 100vw;
+            }
+            .category {
+               display: flex;
+               align-items: center;
+               justify-content: center; 
+               border-radius: 10px;
+            }
+            .c1 {
+                background-color: rgba(200, 200, 200, 0.8);
+            }
+            .c1:hover {
+                background-color: black;
+                color: white;
+                cursor: pointer;
+            }
+            
+        </style>
+        <div class="container">
+            <div class="category c1"><h1>Indian</h1></div>
+            <div class="category c2"><h1>Italian</h1></div>
+            <div class="category c3"><h1>Mexican</h1></div>
+            <div class="category c4"><h1>Greek</h1></div>
+        </div>
+    </body>
+</html>
