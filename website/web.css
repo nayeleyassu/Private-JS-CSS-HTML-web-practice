@@ -1,29 +1,43 @@
 body {
-    background-color: #262A10;
-    height: 100vh; 
+    background-color: #5C1A1B;
+    height : 100vh; 
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-.neon-text {
-    display: block; 
-    font-size: 15rem; 
-    font-family: Verdana, geneva, tahoma, sans-serif; 
-    text-decoration: none; 
-    color: transparent; 
-    -webkit-text-strokes: 3px white; 
-    position: relative; 
-}
-.neon-text::before{
-    content: "AKEON"; 
-    position: absolute; 
-    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+ }
+ .neon-text {
+    display: block;
+    font-size: 15rem;
+    font-family: Verdana,Geneva,Tahoma, sans-serif;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 3px white; 
+    position: relative;
+ }
+ .neon-text::before{
+    content: "RECIPE";
+    position: absolute;
+    width: 0%;
+    height: 100%; 
     overflow: hidden; 
-    color: beige; 
+    color: beige;
     border-right: 8px solid beige; 
-    transition: 0.5s ease-in-out; 
-}
-.neon-text:hover::before {
-    width: 100%; 
-    filter: drop-shadow(0 0 25px beige); 
-}
+    transition: 0.5s ease-in-out;
+ }
+ .neon-text:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px beige);
+ }
+/* Creates a new stacking context on the header */
+#header {
+   position: relative;
+ }
+ 
+ /* Positions header-content at the bottom of header's context */
+ #header-content {
+   position: absolute;
+   bottom: 0px;
+   align-content: center;
+   content: "Bottom";
+ }
