@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> 
-            RECIPES 
-        </title>
-    </head>
-    <body>
+        <title>RECIPES</title>
         <style>
             body {
-                background-color: #5c1A1b;
+                background-color: #546654;
                 padding: 0;
                 margin: 0;
             }
+            
             .container {
                 display: grid;
                 grid-template-rows: 50% 50%;
@@ -19,27 +16,62 @@
                 height: 100vh;
                 width: 100vw;
             }
+            
             .category {
-               display: flex;
-               align-items: center;
-               justify-content: center; 
-               border-radius: 10px;
-            }
-            .c1 {
-                background-color: rgba(200, 200, 200, 0.8);
-            }
-            .c1:hover {
-                background-color: black;
-                color: white;
-                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                transition: 0.3s;
             }
             
+            .category:hover {
+                transform: scale(1.05);
+            }
+            
+            .category:hover::before {
+                opacity: 0.8;
+            }
+            
+            .category::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.5;
+                z-index: -1;
+                transition: 0.3s;
+            }
+            
+            .category h1 {
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                z-index: 1;
+            }
         </style>
+    </head>
+    <body>
         <div class="container">
-            <div class="category c1"><h1>Indian</h1></div>
-            <div class="category c2"><h1>Italian</h1></div>
-            <div class="category c3"><h1>Mexican</h1></div>
-            <div class="category c4"><h1>Greek</h1></div>
+            <div class="category c1" style ="background-image: url(Breakfast.jpg);">
+                <h1>Breakfast</h1>
+            </div>
+            <div class="category c2" style ="background-image: url(snacks.jpeg);">
+                <h1>Snacks</h1>
+            </div>
+            <div class="category c3" style ="background-image: url(lunch.jpeg);">
+                <h1>Lunch</h1>
+            </div>
+            <div class="category c4" style ="background-image: url(dinner.webp);">
+                <h1>Dinner</h1>
+             <!-- we need to find out how to resize the images to fit their respective scales better because reight now everything is working well but the image scaling is all off-->   
+            </div>
         </div>
     </body>
 </html>
